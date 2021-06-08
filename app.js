@@ -160,8 +160,8 @@ app.use((err, req, res, next) => {
 })
 
 
-
-app.listen(3000, () => {
-    console.log('APP IS RUNNING ON PORT 3000')
+const port = process.env.PORT || 3000
+app.listen(port, () => {
+    console.log(`APP IS RUNNING ON PORT ${port}`)
 })
 
